@@ -2,9 +2,9 @@ import React from 'react';
 import "./Task.css";
 const Task = props => {
     return (
-        <div>
-            <ul className='ul'>{props.items.map((task) => {
-                return( <li className='li'>{task.text}</li>)
+        <div className='task-content'>
+            <ul className='task-list'>{props.items.map((task) => {
+                return( <li className='task-item'>{task.text}</li>)
             })}</ul>
         </div>
 
