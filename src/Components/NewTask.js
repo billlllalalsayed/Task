@@ -16,12 +16,13 @@ const NewTask = props => {
 
     }
     return (
-        <div>
-            <form onSubmit={addTaskHandler}>
-                <input className='input' value={textinput} type="text" onChange={textChandgeHandler} />
-                <button>ADD Task</button>
+        <React.Fragment>
+            <form className='task-from' onSubmit={addTaskHandler}>
+            <label form='task-Adder' className='task-label'>Task Name</label>
+                <input className='task-input' id='task-Adder' value={textinput} type="text" onChange={textChandgeHandler} />
+                <input href='#' type='submit' name='Add Task' className='btn-submit' />
             </form>
-        </div>)
+        </React.Fragment>)
 }
  
 export default NewTask;
